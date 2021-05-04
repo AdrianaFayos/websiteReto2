@@ -3,7 +3,7 @@
 Segundo reto del Bootcamp FullStack Developer con <a href="https://geekshubsacademy.com/">GeeksHubs Academy</a> en el que nos piden crear una web de carácter personal.
 
 
-### Requisitos 📋
+### Requisitos 
 
 Para el proyecto deberemos cumplir los siguientes requisitos: 
 
