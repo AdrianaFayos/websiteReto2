@@ -1,4 +1,4 @@
-#fondo {
+#cuerpo {
     margin: 0;
     background-color:#b6bbb9;
 
@@ -55,6 +55,15 @@ section{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+#contenedorProyectos{
+    width: 80;
+    height: 35em;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .tarjeta{
