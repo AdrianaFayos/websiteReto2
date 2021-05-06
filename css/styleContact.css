@@ -1,4 +1,4 @@
-#cuerpo {
+body {
     margin: 0;
     background-color: #b6bbb9;
 } 
@@ -53,6 +53,7 @@ section{
 
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     align-items: center;
 }
 
@@ -70,7 +71,7 @@ section{
     margin: 2em;
     background-color:  #DBD1C5;
     border: 0.1em solid black;
-    height: 35em;
+    height: 28em;
     width: 30em;
 
     display: flex;
