@@ -1,25 +1,28 @@
 body {
     margin: 0;
-    background-color: #b6bbb9;
+    height: 100%;
+    background: radial-gradient(circle, #263135 0%, #20292c 100%);
+    font-family: 'Josefin Sans', sans-serif;
 } 
-
 
 /* BARRA DE NAVEGACION */
 
-a{
-    color: black;
+.navegacion{
+    color: white;
     text-decoration: none;
 }
 
-a:hover {
-    font-weight: bolder;
+.navegacion:hover {
+    color: #88a6b9;
+    transition: .3s;
+    transform: scale(1.05);
 }
 
 .barraNavegacion {
     height: 5em;
     width: 100%;
-    background-color: #DBD1C5;
-    
+    background-color: #303e42;
+
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -37,13 +40,7 @@ a:hover {
     align-items: center;
 }
 
-.github, .linkedin {
-    margin: 1em;
-}
-
-.github:hover, .linkedin:hover {
-    transform: scale(1.2);
-}
+/* Seccion principal */
 
 
 
@@ -52,9 +49,20 @@ a:hover {
 
 footer{
     width: 100%;
-    bottom: 0;
-    position: absolute;
+    text-align: center;
+    padding: 1em;
+    align-self: flex-end;
 
     display: flex;
     justify-content: center;
+    align-items: center;
+}
+
+.github, .linkedin {
+    margin: 1em;
+}
+
+.github:hover, .linkedin:hover {
+    transform: scale(1.2);
+    transition: .6s;
 }

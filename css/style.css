@@ -1,24 +1,31 @@
 body {
     margin: 0;
-    background-color:#b6bbb9;
+    height: 100%;
+    background: radial-gradient(circle, #263135 0%, #20292c 100%);
+    font-family: 'Josefin Sans', sans-serif;
 } 
 
+p{
+    color: white;
+}
 
 /* BARRA DE NAVEGACION */
 
-a{
-    color: black;
+.navegacion{
+    color: white;
     text-decoration: none;
 }
 
-a:hover {
-    font-weight: bolder;
+.navegacion:hover {
+    color: #88a6b9;
+    transition: .3s;
+    transform: scale(1.05);
 }
 
 .barraNavegacion {
     height: 5em;
     width: 100%;
-    background-color: #DBD1C5;
+    background-color: #303e42;
 
     display: flex;
     justify-content: space-between;
@@ -37,15 +44,6 @@ a:hover {
     align-items: center;
 }
 
-.github, .linkedin {
-    margin: 1em;
-}
-
-.github:hover, .linkedin:hover {
-    transform: scale(1.2);
-}
-
-
 /* SECCION CENTRAL */
 
 section{
@@ -62,8 +60,8 @@ section{
 .contenedorTexto{
     width: 60em;
     height: 30em;
-    background-color:#DBD1C5;
-    border: solid .2em rgb(97, 96, 96);
+    background-color:#303e42;
+    border: solid .2em #5c747a;
 
     display: flex;
     flex-direction: column;
@@ -78,8 +76,21 @@ section{
 
 footer{
     width: 100%;
+    text-align: center;
+    padding: 1em;
+    align-self: flex-end;
 
     display: flex;
     justify-content: center;
+    align-items: center;
+}
+
+.github, .linkedin {
+    margin: 1em;
+}
+
+.github:hover, .linkedin:hover {
+    transform: scale(1.2);
+    transition: .6s;
 }
 
