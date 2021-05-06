@@ -41,6 +41,25 @@ body {
     align-items: center;
 }
 
+/* TITULO PAGINA */
+
+.tituloPagina{
+    height: 7em;
+    width: 100%;
+    margin: 1.5em;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#titulo{
+    color: white;
+    font-size: xx-large;
+}
+
+
+
 
 /* Seccion principal */
 
@@ -68,7 +87,7 @@ section{
 }
 #form{
     color: white;
-    margin: 4em;
+    margin-bottom: 4em;
     padding: 0.5em;
     background-color: #303e42;
     border: 0.1em solid #5c747a;
