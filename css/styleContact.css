@@ -5,6 +5,9 @@ body {
     font-family: 'Josefin Sans', sans-serif;
 } 
 
+a{
+    all: unset;
+}
 
 /* BARRA DE NAVEGACION */
 
@@ -13,10 +16,11 @@ body {
     text-decoration: none;
 }
 
-.navegacion:hover {
+.navegacion:hover, .af:hover {
     color: #88a6b9;
     transition: .3s;
     transform: scale(1.05);
+    cursor: pointer;
 }
 
 .barraNavegacion {
@@ -46,7 +50,7 @@ body {
 .tituloPagina{
     height: 7em;
     width: 100%;
-    margin: 1.5em;
+    margin-top: 1.5em;
 
     display: flex;
     align-items: center;
@@ -106,7 +110,6 @@ section{
 footer{
     width: 100%;
     text-align: center;
-    padding: 1em;
     align-self: flex-end;
 
     display: flex;
@@ -121,4 +124,16 @@ footer{
 .github:hover, .linkedin:hover {
     transform: scale(1.2);
     transition: .6s;
+    cursor: pointer;
+}
+
+#linkedinIMG , #githubIMG {
+    color: white;
+    font-size: X-large;
+}
+
+#linkedinIMG:hover , #githubIMG:hover {
+    color: #88a6b9;
+    transition: .3s;
+    transform: scale(1.05);
 }
