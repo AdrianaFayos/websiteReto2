@@ -79,9 +79,10 @@ section{
 }
 
 #me{
-    margin-top: 4em;
+    margin-top: 3em;
+    margin-bottom: 3em;
     height: 20em;
-    width: 20em;
+    width: 30em;
 
     display: flex;
     flex-direction: column;
@@ -89,14 +90,25 @@ section{
     align-items: center;
 }
 
+#ubi , #tlf, #email{
+    color: white;
+    font-size: x-large;
+}
+
+.baseFormulario{
+    margin-bottom: 3em;
+    border: 0.14em solid #3d4d52;
+    height: 27em;
+    width: 30em;
+    border-radius: 0.2em;
+}
+
 #form{
     color: white;
-    margin-bottom: 4em;
-    padding: 0.5em;
-    background-color: #303e42;
-    border: 0.1em solid #5c747a;
-    height: 28em;
+    height: 27em;
     width: 30em;
+    transform: scale(0.95);
+    position: relative;
 
     display: flex;
     flex-direction: column;
@@ -104,9 +116,28 @@ section{
     align-items: center;
 }
 
-#ubi , #tlf, #email{
-    color: white;
-    font-size: x-large;
+.fondoVacio{
+    background-color:#303e42;
+    width: 30em;
+    height: 27em;
+    opacity: 0.7;
+    position: absolute;
+    border-radius: 0.2em;
+}
+
+button{
+    all: unset;
+    cursor: pointer;
+    border: 0.14em solid #3d4d52;
+    background-color:#303e42;
+    padding: 1em;
+    border-radius: 0.2em;
+}
+
+button:hover{
+    color: #88a6b9;
+    transition: .3s;
+    transform: scale(1.05);
 }
 
 /* FOOTER */

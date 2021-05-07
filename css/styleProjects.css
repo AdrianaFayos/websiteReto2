@@ -86,6 +86,7 @@ section{
     background-color: rgb(68, 68, 68);
     border: 0.1em solid #303e42;
     margin: 1em;
+    border-radius: 0.1em;
 
     display: flex;
     flex-direction: column;
@@ -104,6 +105,7 @@ section{
     height: 22em;
     opacity: 0.5;
     position: absolute;
+    border-radius: 0.1em;
 
 }
 
@@ -113,6 +115,11 @@ section{
     height: 22em;
     opacity: 0.83;
     position: absolute;
+    border-radius: 0.1em;
+}
+
+button{
+    all: unset;
 }
 
 .tarjeta:hover .cuadradoProyecto{

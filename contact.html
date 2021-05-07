@@ -27,7 +27,8 @@
         <p id="titulo">CONTACT ME</p>
    </div>
 
-   <section>
+   <section> 
+    
     <div id="me" >
         <i class="fas fa-map-marker-alt" id="ubi"></i>
         <p>Valencia (Spain)</p>
@@ -36,23 +37,28 @@
         <i class="fas fa-envelope" id="email"></i>
         <p>adrifayosperis@gmail.com</p>
     </div>  
-    <div id="form" > 
-       <form action="/signup" method="POST">
-           <label for="fname">Name:</label>
-           <input id="fname" name="fname">
-           <br><br>
-           <label for="email">Email:</label>
-           <input id="email" name="email">
-           <br><br> 
-           <label for="phone">Phone:</label>
-           <input id="phone" name="phone">
-           <br><br> 
-           Message:
-           <br><br> 
-           <textarea name="message" cols="50" rows="10" placeholder="Type your text here"></textarea>
-           <br><br>
-           <button type="button">Send</button>
-       </form>
+
+    <div class="baseFormulario">
+        <div class="fondoVacio"></div>
+        <div id="form" > 
+           
+           <form action="/signup" method="POST">
+               <label for="fname">Name:</label>
+               <input id="fname" name="fname">
+               <br><br>
+               <label for="email">Email:</label>
+               <input id="email" name="email">
+               <br><br> 
+               <label for="phone">Phone:</label>
+               <input id="phone" name="phone">
+               <br><br> 
+               Message:
+               <br><br> 
+               <textarea name="message" cols="50" rows="10" placeholder="Type your text here"></textarea>
+               <br><br>
+               <button onclick="Enviar()" type="button" >Send</button>
+           </form>
+        </div>
     </div>
    </section>
 
@@ -62,6 +68,7 @@
    </footer>
   
   
+   <script src="./js/main.js"></script>
    <script src="https://kit.fontawesome.com/550acb09e5.js" crossorigin="anonymous"></script>
 </body>
 </html>
