@@ -76,7 +76,6 @@ section{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    align-items: center;
 }
 
 #me{
@@ -89,6 +88,7 @@ section{
     justify-content: space-evenly;
     align-items: center;
 }
+
 #form{
     color: white;
     margin-bottom: 4em;
@@ -104,6 +104,10 @@ section{
     align-items: center;
 }
 
+#ubi , #tlf, #email{
+    color: white;
+    font-size: x-large;
+}
 
 /* FOOTER */
 
@@ -129,7 +133,7 @@ footer{
 
 #linkedinIMG , #githubIMG {
     color: white;
-    font-size: X-large;
+    font-size: x-large;
 }
 
 #linkedinIMG:hover , #githubIMG:hover {
