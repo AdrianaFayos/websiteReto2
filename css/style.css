@@ -1,7 +1,7 @@
 body {
     margin: 0;
     height: 100%;
-    background: radial-gradient(circle, #263135 0%, #20292c 100%);
+    background-color: #303e42;
     font-family: 'Josefin Sans', sans-serif;
 } 
 
@@ -11,19 +11,28 @@ a{
  
 p{
     color: white;
+    margin: .5em;
+    transition-duration: 1s;
 }
 
 /* BARRA DE NAVEGACION */
 
 .navegacion{
+
     color: white;
     text-decoration: none;
+    position: relative;
 }
 
 .navegacion:hover, .af:hover  {
     color: #88a6b9;
     transition: .3s;
+    transform: scale(1.05);
     cursor: pointer;
+}
+
+.navegacion, .af{
+    transition: .3s;
 }
 
 .barraNavegacion {
@@ -44,28 +53,54 @@ p{
     width: 20em;
     margin: 2em;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
 }
 
 /* SECCION CENTRAL */
 
+
 section{
-    width: 100%;
-    height: 40em;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.seccionIndex {
+    width:100%;
+    margin-bottom: 2em;
+    transition-duration: 1s;
 
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
+.imagenFondo {
+    width:100%;
+    height: 37em;
+    opacity: 0.83;
+    position: absolute;
+    border-radius: 0.2em;
+}
 
+.fondo{
+    transition-duration: 1s;
+    background-color:#303e42;
+    width: 100%;
+    height: 37em;
+    opacity: 0.9;
+    position: absolute;
+    border-radius: 0.2em;
+}
   
 .contenedorTexto{
-    width: 60em;
-    height: 30em;
-    background-color:#303e42;
-    border: solid .2em #5c747a;
+    position: relative;
+    width:100% ;
+    height: 37em;
+    border: 0.14em solid #3d4d52;
+    border-radius: 0.2em;
 
     display: flex;
     flex-direction: column;
@@ -73,12 +108,41 @@ section{
     justify-content: center;
 }
 
+.hello {
+    font-size: 7em;
+}
 
+.seccionIndex:hover {
+    cursor: pointer;
+    transform: scale(1.04);
+    transition-duration: 1s;
+}
+
+.seccionIndex:hover .fondo{
+    opacity: 0.5;
+    transition-duration: 1s;
+}
+
+.seccionIndex:hover  .barraNavegacion{
+    background-color: unset;
+}
+
+.seccionIndex:hover p{
+    transform: scale(1.3);
+    transition-duration: 1s;
+}
+
+@media only screen and (max-width: 40em) {
+    .hello {
+        font-size: 3em;
+    }
+}    
 
 
 /* FOOTER */
 
 footer{
+    margin-bottom: 1em;
     width: 100%;
     text-align: center;
     align-self: flex-end;
@@ -90,6 +154,7 @@ footer{
 
 .github, .linkedin {
     margin: 1em;
+    transition: .6s;
 }
 
 .github:hover, .linkedin:hover {

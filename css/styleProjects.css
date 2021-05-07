@@ -23,6 +23,10 @@ a{
     cursor: pointer;
 }
 
+.navegacion, .af{
+    transition: .3s;
+}
+
 .barraNavegacion {
     background-color: #303e42;
     height: 5em;
@@ -81,6 +85,7 @@ section{
 }
 
 .tarjeta{
+    transition-duration: 1s;
     width: 18em;
     height: 22em;
     background-color: rgb(68, 68, 68);
@@ -110,6 +115,7 @@ section{
 }
 
 .cuadradoProyecto{
+    transition-duration: 1s;
     background-color:#303e42;
     width: 18em;
     height: 22em;
@@ -145,8 +151,9 @@ button{
 footer{
     width: 100%;
     text-align: center;
+    margin-bottom: 1em;   
+    
     align-self: flex-end;
-
     display: flex;
     justify-content: center;
     align-items: center;
@@ -154,6 +161,7 @@ footer{
 
 .github, .linkedin {
     margin: 1em;
+    transition: .6s;
 }
 
 .github:hover, .linkedin:hover {

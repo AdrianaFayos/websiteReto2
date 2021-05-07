@@ -23,6 +23,10 @@ a{
     cursor: pointer;
 }
 
+.navegacion, .af{
+    transition: .3s;
+}
+
 .barraNavegacion {
     height: 5em;
     width: 100%;
@@ -73,9 +77,10 @@ a{
 
 footer{
     width: 100%;
+    margin-bottom: 1em;
     text-align: center;
+ 
     align-self: flex-end;
-
     display: flex;
     justify-content: center;
     align-items: center;
@@ -83,6 +88,7 @@ footer{
 
 .github, .linkedin {
     margin: 1em;
+    transition: .6s;
 }
 
 .github:hover, .linkedin:hover {
