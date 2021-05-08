@@ -69,8 +69,6 @@ a{
 }
 
 
-
-
 /* Seccion principal */
 
 p{
@@ -108,16 +106,14 @@ section{
 .baseFormulario{
     margin-bottom: 4em;
     border: 0.14em solid #3d4d52;
-
     border-radius: 0.2em;
 }
 
 #form{
     color: white;
-    height: 32em;
-    width: 30em;
     transform: scale(0.95);
     position: relative;
+    padding: 1em;
 
     display: flex;
     flex-direction: column;
@@ -127,14 +123,13 @@ section{
 
 @media only screen and (max-width: 40em) {
     #form, .baseFormulario {
-        transform: scale(0.9);
+        transform: scale(0.8);
+        padding: unset;
     }
 }   
 
 .fondoVacio{
     background-color:#303e42;
-    width: 30em;
-    height: 32em;
     opacity: 0.7;
     position: absolute;
     border-radius: 0.2em;
