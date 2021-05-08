@@ -7,6 +7,7 @@ body {
 
 a{
     all: unset;
+    color: white;
 }
 
 /* BARRA DE NAVEGACION */
@@ -100,6 +101,10 @@ section{
     font-size: x-large;
 }
 
+.tlf:hover , .mail:hover {
+    cursor: pointer;
+}
+
 .baseFormulario{
     margin-bottom: 4em;
     border: 0.14em solid #3d4d52;
@@ -144,6 +149,10 @@ input {
     padding: 0.5em 0;
     font-size: .8em;
     border-bottom: .1em solid white;
+}
+
+textarea {
+    resize: none;
 }
 
 button{
